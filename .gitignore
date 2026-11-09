@@ -1,0 +1,43 @@
+@'
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded files and generated reports
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/reports/*
+!backend/reports/.gitkeep
+
+# Model weights
+*.pt
+
+# IDE and local tools
+.vscode/
+.idea/
+.claude-dev-helper/
+
+# OS
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding utf8 .gitignore
